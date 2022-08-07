@@ -22,8 +22,9 @@ jobs:
     - name: ceshi
       run: |
        cd pixiv-ev
-       mkdir -p /pixiv-ev/1
        chmod 777 /pixiv-ev
+       mkdir -p /pixiv-ev/1
+       
        pthon3 demo.py
          
     - name: Rclone安装
