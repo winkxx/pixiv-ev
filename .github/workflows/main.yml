@@ -21,10 +21,9 @@ jobs:
       run: git clone https://github.com/winkxx/pixiv-ev
     - name: ceshi
       run: |
-       cd pixiv-ev
        chmod 777 /pixiv-ev
-       mkdir -p /pixiv-ev/1
-       
+       cd pixiv-ev
+       mkdir -p /pixiv-ev/1      
        pthon3 demo.py
          
     - name: Rclone安装
