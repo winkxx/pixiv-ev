@@ -11,16 +11,20 @@ jobs:
   AutoDownloaderProcess:
     runs-on: ubuntu-20.04
     steps:
-
-
+    - uses: actions/checkout@v2.1.0
+    - name: python
+      run: sudo apt-get install python3
     # 输出IP
     - name: IP
       run: sudo curl ifconfig.me
-    - name: P站爬收藏
-      run: curl https://rclone.org/install.sh | sudo bash
-
-
-    - uses: actions/checkout@v2.1.0
+    - name: git
+      run: git clone https://github.com/winkxx/pixiv-ev
+    - name: ceshi
+      run: |
+       cd pixiv-ev
+       madir -p /pixiv-ev/1
+       chmod 777 /pixiv-ev
+       pthon3 demo.py
          
     - name: Rclone安装
       run: curl https://rclone.org/install.sh | sudo bash
@@ -32,4 +36,4 @@ jobs:
         EOF
     - name: Rclone Synchronizing file
       run: |
-        rclone copy -P --ignore-existing xinfan: stt:新番
+        #rclone copy -P --ignore-existing xinfan: stt:新番
