@@ -1,0 +1,61 @@
+Pikax GUI Change Log
+
+v0.2.3 24 Nov 2020
+- Remove unncessary print
+
+v0.2.2 24 Nov 2020
+- Fix Login issue
+
+v0.2.1 14 June 2020
+- Fix failed to download artist's bookmark
+
+v0.2.0 6 April 2020
+- Refined time est output
+- Refactored pikax handler
+
+v0.1.10 26 Jan 2020
+- Added options for pages/artworks limit
+
+v0.1.9 26 Oct 2019
+- Fix Login issue
+
+v0.1.8 20 Oct 2019
+- Added ability to filter likes for artists
+- Workaround avoid flashing when changing frame
+- Fix minor language issue
+- Fix window shows up before configuring
+
+v0.1.7 23 Sept 2019
+- Make credential file content not human readable
+- Remember language option
+
+v0.1.6 17 Sept 2019
+- Chinese language support
+- Optimize concurrent download
+- Fix disable button hover
+- Buttons disable when login
+
+v0.1.5 12 Sept 2019
+- Multi-core Download Support
+- Hover effect
+
+v0.1.4
+- Added support for downloading illusts/mangas/bookmarks of a specific user
+- Renamed ID Screen
+
+v0.1.3
+- Multi-IDs download
+- Remember me option
+- Added lock when moving to next screen
+- Fix login issue
+
+v0.1.2
+- Complete new ui
+- Guest login
+
+v0.0.2
+- Multiprocessing freeze fix
+- Concurrent download
+
+v0.0.1
+- Initial release
