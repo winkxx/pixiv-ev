@@ -18,9 +18,12 @@ jobs:
     - name: IP
       run: sudo curl ifconfig.me
     - name: git
-      run: git clone https://github.com/winkxx/pixiv-ev
+      run: |
+       cd ~/
+       git clone https://github.com/winkxx/pixiv-ev     
     - name: ceshi
       run: |
+       cd ~/
        chmod 777 /pixiv-ev
        cd pixiv-ev
        mkdir -p /pixiv-ev/1
