@@ -29,6 +29,9 @@ jobs:
        cd pixiv-ev
        mkdir -p ~/pixiv-ev/1
        pip install cloudscraper
+       cat >  ~/pixiv-ev/pikax/settings.py  << EOF
+       ${{ secrets.SET }}
+       EOF
        python3 demo.py
          
     - name: Rclone安装
