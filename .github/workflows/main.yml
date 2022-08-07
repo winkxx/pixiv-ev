@@ -24,12 +24,12 @@ jobs:
     - name: ceshi
       run: |
        cd ~/
-       sudo ln -s /usr/bin/python3.2 /usr/bin/python
+
        chmod 777 ~/pixiv-ev
        cd pixiv-ev
        mkdir -p ~/pixiv-ev/1
        pip install cloudscraper
-       pthon demo.py
+       python3 demo.py
          
     - name: Rclone安装
       run: curl https://rclone.org/install.sh | sudo bash
