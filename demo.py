@@ -1,5 +1,7 @@
 from pikax import Pikax, settings, params
 from pikax.texts import texts
+texts.lang = texts.ZH
+print('Changed language to Chinese')
 
 
 def download_daily_rankings_example():
@@ -32,7 +34,7 @@ def download_other_user_items_example():
 def download_own_bookmarks_example():
     pixiv = Pikax()
     user = pixiv.login(username=settings.username, password=settings.password)  # login
-    bookmarks = user.bookmarks(limit=15)  # get bookmarks
+    bookmarks = user.bookmarks(limit=100)  # get bookmarks
     pixiv.download(bookmarks)  # download
 
 
@@ -58,16 +60,14 @@ def download_with_filter_example2():
 
 
 def main():
-    download_daily_rankings_example()
-    download_search_example()
+#     download_daily_rankings_example()
+#     download_search_example()
     download_own_bookmarks_example()
-    download_other_user_items_example()
+#     download_other_user_items_example()
     # switch to Chinese:
-    texts.lang = texts.ZH
-    print('Changed language to Chinese')
-    download_by_artwork_id_example()
-    download_with_filter_example()
-    download_with_filter_example2()
+#     download_by_artwork_id_example()
+#     download_with_filter_example()
+#     download_with_filter_example2()
 
 
 if __name__ == '__main__':
