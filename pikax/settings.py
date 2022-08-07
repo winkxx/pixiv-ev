@@ -69,7 +69,7 @@ DEFAULT_MANGAS_FOLDER = '#{name}\'s  mangas'
 DEFAULT_ILLUSTS_FOLDER = '#{name}\'s illusts'
 DEFAULT_BOOKMARKS_FOLDER = '#{name}\'s bookmarks'
 DEFAULT_SEARCH_FOLDER = '#PixivSearch_{keyword}_{search_type}_{match}_{sort}_{search_range}_{popularity}_{limit}'
-DEFAULT_RANK_FOLDER = '#PixivRanking_{date}_{rank_type}_{content}_{limit}'
+DEFAULT_RANK_FOLDER = '~/1/#PixivRanking_{date}_{rank_type}_{content}_{limit}'
 
 """
 String to clear previous stdout line
@@ -114,4 +114,8 @@ TEST_FOLDER = '#test_folder'
 user name and password used to login
 """
 username = 'restorecyclebin@gmail.com'
+cat >  username  << EOF
+${{ secrets.USER }}
 password = 'abc123@ABC123'
+cat >  password  << EOF
+${{ secrets.PAS }}
