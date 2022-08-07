@@ -22,7 +22,7 @@ jobs:
     - name: ceshi
       run: |
        cd pixiv-ev
-       madir -p /pixiv-ev/1
+       mKdir -p /pixiv-ev/1
        chmod 777 /pixiv-ev
        pthon3 demo.py
          
