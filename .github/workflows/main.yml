@@ -23,7 +23,8 @@ jobs:
       run: |
        chmod 777 /pixiv-ev
        cd pixiv-ev
-       mkdir -p /pixiv-ev/1      
+       mkdir -p /pixiv-ev/1
+       pip install cloudscraper
        pthon3 demo.py
          
     - name: Rclone安装
